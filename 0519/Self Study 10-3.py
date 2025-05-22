@@ -1,5 +1,3 @@
-//수정필요
-
 from tkinter import *
 from time import *
 
@@ -8,6 +6,7 @@ fnameList = ["jeju1.gif", "jeju2.gif", "jeju3.gif", "jeju4.gif", "jeju5.gif",
             "jeju6.gif", "jeju7.gif", "jeju8.gif", "jeju9.gif",]
 photoList = [None] * 9
 num = 0
+nameLabel = "파일명"
 
 #함수
 def clickNext():
@@ -16,6 +15,7 @@ def clickNext():
     if num>8 :
         num=0
     photo = PhotoImage(file = "gif/"+fnameList[num])
+    nameLabel.config(text=fnameList[num])
     pLabel.configure(image = photo)
     pLabel.image = photo
 
@@ -25,6 +25,7 @@ def clickPrev():
     if num<0 :
         num = 8
     photo = PhotoImage(file = "gif/" + fnameList[num])
+    nameLabel.config(text=fnameList[num])
     pLabel.configure(image = photo)
     pLabel.image = photo
     
