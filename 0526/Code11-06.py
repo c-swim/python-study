@@ -3,7 +3,7 @@ import os
 inFp = None
 fName, inList, inStr = "",[],""
 
-fName = input("파일명을 입력하하세요 : .")
+fName = input("파일명을 입력하세요 : ")
 
 if os.path.exists(fName) :
     inFp = open(fName, "r")
