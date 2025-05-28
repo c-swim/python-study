@@ -1,7 +1,7 @@
 #입력한 숫자를 1까지...
 def count(num):
     if num >= 1 :
-        print(num, end='')
+        print(num, end=' ')
         count(num-1)
     else:
         return
