@@ -1,9 +1,11 @@
-class Car :
+class Car() :
     color = ""
     speed = 0
     
     def upSpeed(self, value) :
         self.speed += value
+        if (self.speed > 150) :
+            self.speed = 150
     def downSpeed(self, value) :
         self.speed -= value
 
@@ -19,13 +21,13 @@ myCar3 = Car()
 myCar3.color = "노랑"
 myCar3.speed = 0
 
-myCar1.upSpeed(30)
+myCar1.upSpeed(200)
 print("자동차1의 색상은 %s이며, 현재 속도는 %dkm 입니다." %(myCar1.color, myCar1.speed))
 
 
-myCar2.upSpeed(60)
+myCar2.upSpeed(149)
 print("자동차2의 색상은 %s이며, 현재 속도는 %dkm 입니다." %(myCar2.color, myCar2.speed))
 
 
-myCar3.upSpeed(0)
+myCar3.upSpeed(60)
 print("자동차3의 색상은 %s이며, 현재 속도는 %dkm 입니다." %(myCar3.color, myCar3.speed))
