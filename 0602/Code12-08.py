@@ -32,8 +32,8 @@ class Rectangle(Shape):
         sx1, sy1, sx2, sy2 = [0]*4
         sx1 = self.cx - self.width/2
         sy1 = self.cy - self.height/2
-        sx2 = self.cx - self.width/2
-        sy2 = self.cy - self.height/2
+        sx2 = self.cx + self.width/2
+        sy2 = self.cy + self.height/2
         
         self.setPen()
         self.myTurtle.penup()
